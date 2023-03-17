@@ -1,0 +1,73 @@
+#now-playing {
+	text-align: center;
+	margin-top: 50px;
+}
+
+#song-name {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+#song-progress-bar {
+	height: 20px;
+	background-color: #1DB954;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+#song-progress {
+	height: 100%;
+	background-color: #FFFFFF;
+	width: 0%;
+	transition: width 1s ease-in-out;
+}
+
+#play-pause-buttons {
+	margin-top: 20px;
+}
+
+#play-button,
+#pause-button {
+	background-color: #1DB954;
+	color: #FFFFFF;
+	border: none;
+	padding: 10px 20px;
+	font-size: 24px;
+	margin-right: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#play-button:hover,
+#pause-button:hover {
+	background-color: #1ED760;
+}
+
+#voting-buttons {
+	text-align: center;
+	margin-top: 50px;
+}
+
+#voting-buttons button {
+	background-color: #1DB954;
+	color: #FFFFFF;
+	border: none;
+	padding: 10px 20px;
+	font-size: 24px;
+	margin-right: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#voting-buttons button:hover {
+	background-color: #1ED760;
+}
+
+body {
+    background-color: #282828;
+
+}
+
+#song-name {
+    color: white;
+}

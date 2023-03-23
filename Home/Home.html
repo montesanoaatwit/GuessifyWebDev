@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Guessify - Login</title>
-	<link rel="stylesheet" type="text/css" href="Home.css">
-</head>
-<body>
-	<header>
-		<h1>Guessify</h1>
-	</header>
-	<main>
-		<section id="login">
-			<h2>Login with Spotify</h2>
-			<p>Click the button below to log in with your Spotify account and start playing.</p>
-			<a href="#" class="login-button">Login with Spotify</a>
-		</section>Y
-	</main>
-</body>
+  <head>
+    <title>Guessify - Login</title>
+    <link rel="stylesheet" href="Home.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Guessify</h1>
+      <div class="login-container">
+        <p class="login-description">Login to Spotify to start playing</p>
+        <a href="https://accounts.spotify.com/authorize?client_id=YOUR_CLIENT_ID&response_type=token&redirect_uri=YOUR_REDIRECT_URI&scope=user-read-private%20user-read-email">
+          <button class="login-button">Login to Spotify</button>
+        </a>
+      </div>
+    </div>
+  </body>
 </html>

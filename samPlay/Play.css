@@ -2,7 +2,7 @@
 	--spotifyblack: #191414;
 	--spotifygreen: #1db954;
 	--spotifygreenlight: #1ed760;
-	/* font-fam: Arial, sans-serif; */
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 header{
 	width: 45%;
@@ -24,7 +24,7 @@ header h1 a{
 	text-decoration: none;
 }
 header h1 a:visited{
-	color: gray;
+	color: hotpink;
 	text-decoration: none;
 }
 
@@ -71,6 +71,7 @@ div#welcome, div#songInputDiv{
 	border: white 1px;
 	border-style: dashed;
 }
+
 input#songInput{
 	width: 300px;
 	font-size: larger;
@@ -90,4 +91,13 @@ input#songInput{
 #musicnotes{
 	width: auto;
 	height: 13em;
+}
+
+div#lobbyInputs{
+	display: inline-block;
+}
+img#disco{
+	display: inline-block;
+	width: auto;
+	height: 90px;
 }

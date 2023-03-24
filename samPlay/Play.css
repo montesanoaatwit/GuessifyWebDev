@@ -1,10 +1,11 @@
 *{
 	--spotifyblack: #191414;
 	--spotifygreen: #1db954;
+	--spotifygreenlight: #1ed760;
+	/* font-fam: Arial, sans-serif; */
 }
 header{
-	width: 40%;
-	background: var(--spotifyblack);
+	width: 45%;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -14,36 +15,72 @@ header h1{
 	text-align: center;
 	background: var(--spotifyblack);
 	font-size: 50px;
-	
+	padding: .5em 1em;
+	border: white 1px;
+	border-style: dotted;
 }
+header h1 a{
+	color: white;
+	text-decoration: none;
+}
+header h1 a:visited{
+	color: gray;
+	text-decoration: none;
+}
+
 header img{
 	height: 50px;
 	width: auto;
 }
 
-table{
+table#play{
 	background-color: white;
-	color: black;
-	/* display: block; */
+	color: var(--spotifyblack);
 	margin-left: auto;
 	margin-right: auto;
 }
 
-input#submit{
+input#submit, input#startbutton{
 	text-align: center;
-	background-color: #1ed760;
+	background-color: var(--spotifygreen);
 	padding: 10px 20px;
 	font-size: 20px;
 	margin: 10px;
 	border-radius: 5px;
 	cursor: pointer;
 }
-input#submit:hover{
-	background-color: #1DB954;
+input#submit:hover, input#startbutton:hover{
+	background-color: var(--spotifygreen);
 }
 
 body {
     background-image: url(../images/stars.png);
 	background-repeat: repeat;
 	background-size: 100px;
+}
+
+div#welcome{
+	color: white;
+	background-color: var(--spotifyblack);
+	text-align: center;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	border: white 1px;
+	border-style: dashed;
+}
+#welcometable{
+	margin-right: auto;
+	margin-left: auto;
+}
+#welcometable #midrow{
+	padding-left: 1em;
+	padding-right: 1em;
+
+}
+#musicnotes{
+	width: auto;
+	height: 13em;
 }

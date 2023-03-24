@@ -3,6 +3,7 @@
 <head>
 	<title>Create Game Lobby</title>
 	<link rel="stylesheet" href="play.css">
+	<script src="Play.js"></script>
 	<header>
 		<h1><img src="../images/Spotify_icon.png" alt="spotify logo"><a href="./home.html"> Guessify </a><img src="../images/Spotify_icon.png" alt="spotify logo"></h1>
 	</header>
@@ -12,8 +13,8 @@
 	<div id="songInputDiv">
 		<img src="../images/discoball.gif" id="disco">
 		<div id="lobbyInputs">
-			<input type="text" id="songInput" placeholder="Input song name and artist">
-			<input type="button" id="submitSong" name="Submit" value="Submit song">
+			<input type="text" name="songInput" id="songInput" placeholder="Input song name and artist">
+			<input type="button" id="submitSong" name="Submit" value="Submit song" onclick="processInput()">
 		</div>
 		<!-- this button should accept 4 text inputs, on the 4th input it should redirect to ./Play.html -->
 		<img src="../images/discoball.gif" id="disco">

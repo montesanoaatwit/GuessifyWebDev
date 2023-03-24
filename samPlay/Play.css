@@ -1,11 +1,32 @@
+*{
+	--spotifyblack: #191414;
+	--spotifygreen: #1db954;
+}
+header{
+	width: 40%;
+	background: var(--spotifyblack);
+	margin-left: auto;
+	margin-right: auto;
 
-
+}
+header h1{
+	color: white;
+	text-align: center;
+	background: var(--spotifyblack);
+	font-size: 50px;
+	
+}
+header img{
+	height: 50px;
+	width: auto;
+}
 
 table{
 	background-color: white;
 	color: black;
 	/* display: block; */
-	/* align-self: center; */
+	margin-left: auto;
+	margin-right: auto;
 }
 
 input#submit{
@@ -22,5 +43,7 @@ input#submit:hover{
 }
 
 body {
-    background-color: #282828;
+    background-image: url(../images/stars.png);
+	background-repeat: repeat;
+	background-size: 100px;
 }

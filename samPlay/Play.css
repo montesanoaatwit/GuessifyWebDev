@@ -40,7 +40,7 @@ table#play{
 	margin-right: auto;
 }
 
-input#submit, input#startbutton{
+input#submit, input#startbutton, input#submitSong{
 	text-align: center;
 	background-color: var(--spotifygreen);
 	padding: 10px 20px;
@@ -49,7 +49,7 @@ input#submit, input#startbutton{
 	border-radius: 5px;
 	cursor: pointer;
 }
-input#submit:hover, input#startbutton:hover{
+input#submit:hover, input#startbutton:hover, input#submitSong:hover{
 	background-color: var(--spotifygreen);
 }
 
@@ -59,7 +59,7 @@ body {
 	background-size: 100px;
 }
 
-div#welcome{
+div#welcome, div#songInputDiv{
 	color: white;
 	background-color: var(--spotifyblack);
 	text-align: center;
@@ -71,6 +71,13 @@ div#welcome{
 	border: white 1px;
 	border-style: dashed;
 }
+input#songInput{
+	width: 300px;
+	font-size: larger;
+	padding: 10px;
+}
+
+
 #welcometable{
 	margin-right: auto;
 	margin-left: auto;

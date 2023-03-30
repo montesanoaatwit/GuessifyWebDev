@@ -43,3 +43,12 @@ function addSong() {
   }
   
 }
+
+function handleKeyPress(event) {
+  if (event.key === 'Enter') {
+    addSong();
+  }
+}
+
+document.getElementById("songInput").addEventListener("keypress", handleKeyPress);
+

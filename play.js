@@ -1,40 +1,42 @@
-PS = [0, 0, 0, 0];
+const PS = [0, 0, 0, 0];
 
-const songsR = JSON.parse(localStorage.getItem('data'))
-console.log(songsR)
+const songsR = JSON.parse(localStorage.getItem('data'));
+console.log(songsR);
 
 let index = 0;
-currSong = songsR[index][0];
+let currSong = songsR[index][0];
 
 window.onload = function() {
   const songDisplay = document.getElementById("songDisplay");
   songDisplay.textContent = currSong;
 };
 
-function endRound() {
-  const playerz = [document.getElementsByName('player1'), document.getElementsByName('player2'), document.getElementsByName('player3'), document.getElementsByName('player4')];
-  let playerV = [0, 0, 0, 0];
-  count = 0;
-
-  for (let item of playerz) {
-    for (let i = 0; i < item.length; i++) {
-      if (item[i].checked) {
-        playerV[count] = i;
-        break;
-      }
+function getCheckedRadioIndex(player) {
+  const radioButtons = document.getElementsByName(player);
+  for (let i = 0; i < radioButtons.length; i++) {
+    if (radioButtons[i].checked) {
+      return i + 1;
     }
-
-    count++;
   }
+  return null;
+}
 
-  for (let i = 0 ; i < 4; i++) {
-    console.log("player" + playerV[i] + "song " + songsR[index])
-    if(playerV[i] == songsR[index][1]) {
+function endRound() {
+  const playerNames = ['player1', 'player2', 'player3', 'player4'];
+  let playerVotes = playerNames.map(getCheckedRadioIndex);
+
+  playerVotes.forEach((vote, i) => {
+    if (vote === songsR[index][1]) {
       PS[i]++;
     }
-  }
+  });
 
   console.log(PS);
   index++;
-  songDisplay.textContent = songsR[index]
+  if (index < songsR.length) {
+    currSong = songsR[index][0];
+    document.getElementById("songDisplay").textContent = currSong;
+  } else {
+    // Handle the end of the game, e.g., display the final scores
+  }
 }

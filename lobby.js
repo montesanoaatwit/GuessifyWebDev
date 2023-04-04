@@ -24,7 +24,7 @@ function addSong() {
   songCount++;
 
   input.value = "";
-  if (songs.length === 8) {
+  if (songs.length === 4) {
     const shuffledSongs = shuffleArray(songs);
     console.log(shuffledSongs);
 

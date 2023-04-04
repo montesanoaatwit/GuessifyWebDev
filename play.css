@@ -20,11 +20,11 @@ header h1{
 	border-style: dotted;
 }
 header h1 a{
-	color: white;
+	color: hotpink;
 	text-decoration: none;
 }
 header h1 a:visited{
-	color: gray;
+	color: hotpink;
 	text-decoration: none;
 }
 
@@ -91,4 +91,10 @@ input#songInput{
 #musicnotes{
 	width: auto;
 	height: 13em;
+}
+#discoball{
+	width: auto;
+	height: 5em;
+	padding-left: 1em;
+	padding-right: 1em;
 }

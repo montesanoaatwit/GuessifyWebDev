@@ -2,7 +2,7 @@
 	--spotifyblack: #191414;
 	--spotifygreen: #1db954;
 	--spotifygreenlight: #1ed760;
-	/* font-fam: Arial, sans-serif; */
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 header{
 	width: 45%;
@@ -92,9 +92,13 @@ input#songInput{
 	width: auto;
 	height: 13em;
 }
-#discoball{
+#discoball, #record{
 	width: auto;
 	height: 5em;
 	padding-left: 1em;
 	padding-right: 1em;
+}
+p#songDisplay{
+	padding-left: 1em;
+	
 }

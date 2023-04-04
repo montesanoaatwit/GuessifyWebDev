@@ -37,6 +37,6 @@ function endRound() {
     currSong = songsR[index][0];
     document.getElementById("songDisplay").textContent = currSong;
   } else {
-    // Handle the end of the game, e.g., display the final scores
+    window.location.href = "/results.html";
   }
 }

@@ -102,3 +102,6 @@ p#songDisplay{
 	padding-left: 1em;
 	
 }
+table#results td{
+	padding: .25em 1em;
+}

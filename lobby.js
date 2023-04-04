@@ -29,11 +29,12 @@ function addSong() {
 
   input.value = "";
   if (songs.length === 4) {
+    localStorage.setItem('songs', JSON.stringify(songs));
     const shuffledSongs = shuffleArray(songs);
     console.log(shuffledSongs);
 
     localStorage.setItem('data', JSON.stringify(shuffledSongs));
-    localStorage.setItem('songs', JSON.stringify(songs));
+    
     window.location.href = "/play.html";
   }
 }

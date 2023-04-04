@@ -13,11 +13,11 @@ window.onload = function() {
     const p3Score = document.getElementById("p3Score");
     const p4Score = document.getElementById("p4Score");
     
-    //these are always displayed out of order for some reason, and there's no consistency
-    p1Song.textContent = songs[0];
-    p2Song.textContent = songs[1];
-    p3Song.textContent = songs[2];
-    p4Song.textContent = songs[3];
+
+    p1Song.textContent = songs[0][0];
+    p2Song.textContent = songs[1][0];
+    p3Song.textContent = songs[2][0];
+    p4Song.textContent = songs[3][0];
 
     p1Score.textContent = PS[0];
     p2Score.textContent = PS[1];

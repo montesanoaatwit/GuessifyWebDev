@@ -1,4 +1,5 @@
-function shuffleArray(array) {
+
+function shuffleArray(array) {  //used to shuffle songs
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
@@ -8,8 +9,8 @@ function shuffleArray(array) {
 
 let songs = [];
 let songCount = 0;
-let songIDNum = 1;
-function addSong() {
+
+function addSong() { //adds input song to DB
   const input = document.getElementById("songInput");
   let song = input.value.trim();
 
@@ -18,18 +19,16 @@ function addSong() {
   }
 
   let songID = songCount+1;
-  //removed "Math.floor(songCount / 2) + 1" to get score to display properly
 
   songs.push([song, songID]);
-  //deleted ", songID" from this array bc it wasn't used elsewhere and just messed w results screen
   console.log(song);
 
   songCount++;
-  songIDNum++;
+
 
   input.value = "";
-  if (songs.length === 4) {
-    localStorage.setItem('songs', JSON.stringify(songs));
+  if (songs.length === 4) { //if 4 songs have been input, the data is sent to the database and the user is redirected to the next page
+    localStorage.setItem('songs', JSON.stringify(songs)); //this is placed before the rest of the stuff bc oit gets randomized otherwise
     const shuffledSongs = shuffleArray(songs);
     console.log(shuffledSongs);
 

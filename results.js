@@ -23,4 +23,15 @@ window.onload = function() {
     p2Score.textContent = PS[1];
     p3Score.textContent = PS[2];
     p4Score.textContent = PS[3];
+
+
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            // Request successful - do something if needed
+        }
+    };
+    xmlhttp.open("POST", "insert.php", true);
+    xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xmlhttp.send("user1_score=" + user1_score + "&user2_score=" + user2_score + "&user3_score=" + user3_score + "&user4_score=" + user4_score + "&song1=" + song1 + "&song2=" + song2 + "&song3=" + song3 + "&song4=" + song4);
 }

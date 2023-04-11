@@ -45,3 +45,4 @@ function endRound() {
     window.location.href = "/results.html";
   }
 }
+

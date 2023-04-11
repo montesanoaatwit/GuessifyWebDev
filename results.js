@@ -2,6 +2,14 @@ const songs = JSON.parse(localStorage.getItem('songs'));
 const PS = JSON.parse(localStorage.getItem('PS'));
 
 
+function sendDataToServer(song, score) {
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "insert_data.php", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    
+    xhr.send(`song=${encodeURIComponent(song)}&score=${encodeURIComponent(score)}`);
+}
+
 window.onload = function() {
     const p1Song = document.getElementById("p1Song");
     const p2Song = document.getElementById("p2Song");
@@ -25,13 +33,9 @@ window.onload = function() {
     p4Score.textContent = PS[3];
 
 
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            // Request successful - do something if needed
-        }
-    };
-    xmlhttp.open("POST", "insert.php", true);
-    xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xmlhttp.send("user1_score=" + user1_score + "&user2_score=" + user2_score + "&user3_score=" + user3_score + "&user4_score=" + user4_score + "&song1=" + song1 + "&song2=" + song2 + "&song3=" + song3 + "&song4=" + song4);
-}
+    for (let i = 0; i < songs.length; i++) {
+        sendDataToServer(songs[i][1], PS[i]);
+    }
+};
+
+  

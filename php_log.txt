@@ -1,0 +1,159 @@
+[2023-04-11 22:12:22] Script started
+[2023-04-11 22:12:22] POST data: Array
+(
+    [song] => two
+    [score] => 1
+)
+
+[2023-04-11 22:12:22] Trying to connect to the database
+[2023-04-11 22:12:22] POST data: Array
+(
+    [song] => one
+    [score] => 1
+)
+
+[2023-04-11 22:12:22] Trying to connect to the database
+[2023-04-11 22:12:22] Script started
+[2023-04-11 22:12:22] Script started
+[2023-04-11 22:12:22] POST data: Array
+(
+    [song] => three
+    [score] => 1
+)
+
+[2023-04-11 22:12:22] POST data: Array
+(
+    [song] => four
+    [score] => 1
+)
+
+[2023-04-11 22:12:22] Trying to connect to the database
+[2023-04-11 22:12:22] Trying to connect to the database
+[2023-04-11 22:12:22] Connected to the database
+[2023-04-11 22:12:22] Connected to the database
+[2023-04-11 22:12:22] Connected to the database
+[2023-04-11 22:12:22] Connected to the database
+[2023-04-11 22:12:22] Data inserted successfully
+[2023-04-11 22:12:22] Data inserted successfully
+[2023-04-11 22:12:22] Data inserted successfully
+[2023-04-11 22:12:22] Data inserted successfully
+[2023-04-11 22:25:25] Script started
+[2023-04-11 22:25:25] POST data: Array
+(
+    [song] => One
+    [score] => 1
+)
+
+[2023-04-11 22:25:25] Trying to connect to the database
+[2023-04-11 22:25:25] Connected to the database
+[2023-04-11 22:25:25] Script started
+[2023-04-11 22:25:25] POST data: Array
+(
+    [song] => two
+    [score] => 1
+)
+
+[2023-04-11 22:25:25] Trying to connect to the database
+[2023-04-11 22:25:25] Connected to the database
+[2023-04-11 22:25:25] Script started
+[2023-04-11 22:25:25] POST data: Array
+(
+    [song] => three
+    [score] => 1
+)
+
+[2023-04-11 22:25:25] Trying to connect to the database
+[2023-04-11 22:25:25] Connected to the database
+[2023-04-11 22:25:25] Script started
+[2023-04-11 22:25:25] POST data: Array
+(
+    [song] => four
+    [score] => 1
+)
+
+[2023-04-11 22:25:25] Trying to connect to the database
+[2023-04-11 22:25:25] Connected to the database
+[2023-04-11 22:25:25] Data inserted successfully
+[2023-04-11 22:25:25] Data inserted successfully
+[2023-04-11 22:25:25] Data inserted successfully
+[2023-04-11 22:25:25] Data inserted successfully
+[2023-04-11 22:27:00] Script started
+[2023-04-11 22:27:00] POST data: Array
+(
+    [song] => one
+    [score] => 1
+)
+
+[2023-04-11 22:27:00] Trying to connect to the database
+[2023-04-11 22:27:00] Connected to the database
+[2023-04-11 22:27:00] Script started
+[2023-04-11 22:27:00] POST data: Array
+(
+    [song] => two
+    [score] => 1
+)
+
+[2023-04-11 22:27:00] Trying to connect to the database
+[2023-04-11 22:27:00] Connected to the database
+[2023-04-11 22:27:00] Script started
+[2023-04-11 22:27:00] Script started
+[2023-04-11 22:27:00] POST data: Array
+(
+    [song] => four
+    [score] => 0
+)
+
+[2023-04-11 22:27:00] POST data: Array
+(
+    [song] => three
+    [score] => 1
+)
+
+[2023-04-11 22:27:00] Trying to connect to the database
+[2023-04-11 22:27:00] Trying to connect to the database
+[2023-04-11 22:27:00] Connected to the database
+[2023-04-11 22:27:00] Connected to the database
+[2023-04-11 22:27:00] Data inserted successfully
+[2023-04-11 22:27:00] Data inserted successfully
+[2023-04-11 22:27:00] Data inserted successfully
+[2023-04-11 22:27:00] Data inserted successfully
+[2023-04-11 22:27:55] Script started
+[2023-04-11 22:27:55] POST data: Array
+(
+    [song] => one
+    [score] => 1
+)
+
+[2023-04-11 22:27:55] Script started
+[2023-04-11 22:27:55] Trying to connect to the database
+[2023-04-11 22:27:55] POST data: Array
+(
+    [song] => two
+    [score] => 1
+)
+
+[2023-04-11 22:27:55] Trying to connect to the database
+[2023-04-11 22:27:55] Connected to the database
+[2023-04-11 22:27:55] Connected to the database
+[2023-04-11 22:27:55] Script started
+[2023-04-11 22:27:55] POST data: Array
+(
+    [song] => three
+    [score] => 1
+)
+
+[2023-04-11 22:27:55] Trying to connect to the database
+[2023-04-11 22:27:55] Connected to the database
+[2023-04-11 22:27:55] Script started
+[2023-04-11 22:27:55] POST data: Array
+(
+    [song] => four
+    [score] => 1
+)
+
+[2023-04-11 22:27:55] Trying to connect to the database
+[2023-04-11 22:27:55] Connected to the database
+[2023-04-11 22:27:55] Data inserted successfully
+[2023-04-11 22:27:55] Data inserted successfully
+[2023-04-11 22:27:55] Data inserted successfully
+[2023-04-11 22:27:55] Data inserted successfully

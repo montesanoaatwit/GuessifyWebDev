@@ -1,19 +1,21 @@
 <?php
-// Connect to the database
-$db = new SQLite3('myDB.db');
+// insert_data.php
 
-// Get the values from the POST request
-$user1_score = $_POST['user1_score'];
-$user2_score = $_POST['user2_score'];
-$user3_score = $_POST['user3_score'];
-$user4_score = $_POST['user4_score'];
-$song1 = $_POST['song1'];
-$song2 = $_POST['song2'];
-$song3 = $_POST['song3'];
-$song4 = $_POST['song4'];
+// Database connection
+$dbname = "my.db";
 
-// Insert the values into the table
-$db->exec("INSERT INTO scores (user1_score, user2_score, user3_score, user4_score, song1, song2, song3, song4) 
-VALUES ($user1_score, $user2_score, $user3_score, $user4_score, '$song1', '$song2', '$song3', '$song4')");
+// Create connection
+$conn = new SQLite3($dbname);
+
+// Prepare and bind
+$stmt = $conn->prepare("INSERT INTO songs_scores (song, score) VALUES (:song, :score)");
+$stmt->bindValue(':song', $_POST['song'], SQLITE3_TEXT);
+$stmt->bindValue(':score', $_POST['score'], SQLITE3_INTEGER);
+
+// Execute statement
+$result = $stmt->execute();
+
+// Close statement and connection
+$stmt->close();
+$conn->close();
 ?>
- 
